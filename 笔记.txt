@@ -1,0 +1,18 @@
+profile：动态配置切换
+
+内部配置加载顺序：
+1. file:./config/: 当前项目下的/config目录下
+2. file:./       : 当前项目的根目录
+3. classpath:/config/: classpath的/config目录
+4. classpath:/ : classpath的根目录（resources下的application.properties就是打包到这个根目录下）
+
+外部配置：
+命令行：java -jar .\springboot-config-0.0.1-SNAPSHOT.jar --server.port=8082 --server.servlet.context-path=/hello
+指定文件：java -jar .\springboot-config-0.0.1-SNAPSHOT.jar --spring.config.location=e:\CSSoftWare\IDEA\application.properties
+target根目录下和target\config目录下
+
+顺序：
+Profile-specific application properties outside of your packaged jar (application-{profile}.properties and YAML variants).
+Profile-specific application properties packaged inside your jar (application-{profile}.properties and YAML variants).
+Application properties outside of your packaged jar (application.properties and YAML variants).
+Application properties packaged inside your jar (application.properties and YAML variants).

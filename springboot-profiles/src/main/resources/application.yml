@@ -1,0 +1,29 @@
+#yml多文档配置切换 一定要使用三个-即“---”
+#配置虚拟机参数 -Dspring.profiles.active=dev 在VM Option中指定
+#配置命令行参数 --spring.profiles.active=dev
+#java -jar .\springboot-profiles-0.0.1-SNAPSHOT.jar --spring.profiles.active=test
+---
+server:
+  port: 8081
+
+spring:
+  profiles: dev
+
+---
+server:
+  port: 8082
+
+spring:
+  profiles: test
+
+---
+server:
+  port: 8083
+
+spring:
+  profiles: pro
+
+---
+#spring:
+#  profiles:
+#    active: dev
