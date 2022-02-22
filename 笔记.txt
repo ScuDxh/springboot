@@ -16,3 +16,18 @@ Profile-specific application properties outside of your packaged jar (applicatio
 Profile-specific application properties packaged inside your jar (application-{profile}.properties and YAML variants).
 Application properties outside of your packaged jar (application.properties and YAML variants).
 Application properties packaged inside your jar (application.properties and YAML variants).
+
+----整合junit
+1. 搭建SpringBoot工程
+2. 引入starter-test起步依赖
+3. 编写测试类
+4. 添加测试相关注解
+. @RunWith(SpringRunner.class)
+. @SpringBootTest(classes=启动类.class)
+5. 编写测试方法
+
+    spring boot 2.2之前使用的是 Junit4(import org.junit.Test;)
+
+    spring boot 2.2之后使用的是 Junit5(不加runwith注解 import org.junit.jupiter.api.Test;)
+
+    https://www.jianshu.com/p/bdd22240fe4b

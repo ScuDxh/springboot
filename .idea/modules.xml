@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/springboot-helloworld/springboot-helloworld.iml" filepath="$PROJECT_DIR$/springboot-helloworld/springboot-helloworld.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-init/springboot-init.iml" filepath="$PROJECT_DIR$/springboot-init/springboot-init.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-profiles/springboot-profiles.iml" filepath="$PROJECT_DIR$/springboot-profiles/springboot-profiles.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-test/springboot-test.iml" filepath="$PROJECT_DIR$/springboot-test/springboot-test.iml" />
     </modules>
   </component>
 </project>
